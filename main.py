@@ -5,18 +5,10 @@ from langchain_community.tools import DuckDuckGoSearchRun
 from langchain.agents import Tool
 search_tool = DuckDuckGoSearchRun()
 
-# os.environ["OPENAI_API_KEY"] = "YOUR_API_KEY"
-# os.environ["SERPER_API_KEY"] = "Your Key" # serper.dev API key
 
 os.environ["OPENAI_API_BASE"] = 'http://localhost:11434/v1'
 os.environ["OPENAI_MODEL_NAME"] = 'llama2'  # Adjust based on available model
 os.environ["OPENAI_API_KEY"] = 'sk-111111111111111111111111111111111111111111111111'
-
-# You can choose to use a local model through Ollama for example. See https://docs.crewai.com/how-to/LLM-Connections/ for more information.
-
-# os.environ["OPENAI_API_BASE"] = 'http://localhost:11434/v1'
-# os.environ["OPENAI_MODEL_NAME"] ='openhermes'  # Adjust based on available model
-# os.environ["OPENAI_API_KEY"] ='sk-111111111111111111111111111111111111111111111111'
 
 # search_tool = SerperDevTool()
 
