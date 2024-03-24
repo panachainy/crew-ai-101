@@ -9,6 +9,8 @@ readme = "README.md"
 python = ">=3.10,<=3.13"
 crewai = "^0.22.5"
 crewai-tools = "^0.1.0"
+duckduckgo-search = "^5.1.0"
+langchain-community = "^0.0.29"
 
 [build-system]
 requires = ["poetry-core"]
