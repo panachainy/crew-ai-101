@@ -6,9 +6,9 @@ authors = ["panachainy <panachai.ny@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
-crewai = "0.1.5"
-
+python = ">=3.10,<=3.13"
+crewai = "^0.22.5"
+crewai-tools = "^0.1.0"
 
 [build-system]
 requires = ["poetry-core"]
