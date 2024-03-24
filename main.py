@@ -2,6 +2,7 @@ import os
 from crewai import Agent, Task, Crew, Process
 from crewai_tools import SerperDevTool
 from langchain_community.tools import DuckDuckGoSearchRun
+from langchain.agents import Tool
 search_tool = DuckDuckGoSearchRun()
 
 # os.environ["OPENAI_API_KEY"] = "YOUR_API_KEY"
@@ -19,12 +20,12 @@ os.environ["OPENAI_API_KEY"] ='sk-1111111111111111111111111111111111111111111111
 
 # search_tool = SerperDevTool()
 
-search = DuckDuckGoSearchResults()
-search_tool = Tool(
-    name="duckduckgo_search", #match the name from crewai's Action: duckduckgo_search
-    description="A search tool used to query DuckDuckGoSearchRun for search results when trying to find information from the internet.",
-    func=search.run
-)
+# search = DuckDuckGoSearchResults()
+# search_tool = Tool(
+#     name="duckduckgo_search", #match the name from crewai's Action: duckduckgo_search
+#     description="A search tool used to query DuckDuckGoSearchRun for search results when trying to find information from the internet.",
+#     func=search.run
+# )
 
 # Define your agents with roles and goals
 researcher = Agent(
